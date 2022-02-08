@@ -35,3 +35,24 @@ fun main() {
         n1 = fib
     }
 }
+
+
+/*
+*Solucionado el 07/02/2022 por PetterJosé
+ */
+fun miSolucion(){
+    var serieFibonacci=ArrayList<Int>()
+    serieFibonacci.add(0)
+    serieFibonacci.add(1)
+    var numeroFibonacci=0
+    var anterior=0
+
+    for(x in 1..50){
+        anterior=serieFibonacci[x-1]
+        numeroFibonacci=anterior+numeroFibonacci
+        serieFibonacci.add(numeroFibonacci)
+    }
+    serieFibonacci.removeAt(0)
+    serieFibonacci.removeAt(0)
+    println(serieFibonacci)
+}

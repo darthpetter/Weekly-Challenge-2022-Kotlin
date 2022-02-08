@@ -35,3 +35,23 @@ fun main() {
         }
     }
 }
+
+
+/*
+*Solucionado el 07/02/2022 por PetterJosé
+ */
+fun miSolución(){
+    for(x in 1..150){
+        val multiploDeTres = x % 3 == 0
+        val multiploDeCinco = x % 5 == 0
+
+        if(multiploDeTres && multiploDeCinco)
+            println("fizzbuzz")
+        else if(multiploDeTres)
+            println("fizz")
+        else if(multiploDeCinco)
+            println("buzz")
+        else
+            println(x)
+    }
+}

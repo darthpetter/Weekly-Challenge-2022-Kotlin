@@ -17,4 +17,31 @@ package com.mouredev.weeklychallenge2022
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
+fun main(){
+    solucionV1()
+    solucionV2()
+}
 
+/*
+*Solucionado el 07/02/2022 por PetterJosé
+ */
+fun solucionV1(){
+    val frase:String="Hola Mundo Mundial"
+    var fraseDescompuesta=ArrayList<Char>()
+    for(letra in frase){
+        fraseDescompuesta.add(letra)
+    }
+    for(x in fraseDescompuesta.size downTo 1){
+        print(fraseDescompuesta[x-1])
+    }
+}
+
+fun solucionV2(){
+    val frase:String="Hola Mundo Mundial"
+    var index:Int=frase.length
+
+    while(index>0){
+        print(frase[index-1])
+        index--
+    }
+}

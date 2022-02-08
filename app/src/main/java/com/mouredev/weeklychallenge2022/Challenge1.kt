@@ -30,3 +30,13 @@ private fun isAnagram(wordOne: String, wordTwo: String): Boolean {
     }
     return wordOne.lowercase().toCharArray().sortedArray().contentEquals(wordTwo.lowercase().toCharArray().sortedArray())
 }
+
+/*
+*Solucionado el 07/02/2022 por PetterJosé
+ */
+fun esAnagrama(primerPalabra:String,segundaPalabra:String):Boolean{
+    if (primerPalabra.lowercase()==segundaPalabra.lowercase()) {
+        return false
+    }
+    return primerPalabra.lowercase().toCharArray().sortedArray().contentEquals(segundaPalabra.lowercase().toCharArray().sortedArray())
+}
